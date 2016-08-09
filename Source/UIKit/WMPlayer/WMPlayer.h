@@ -12,7 +12,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 
 @import MediaPlayer;
 @import AVFoundation;
