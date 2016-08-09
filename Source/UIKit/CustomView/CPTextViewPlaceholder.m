@@ -7,9 +7,8 @@
 //
 
 #import "CPTextViewPlaceholder.h"
-#import <ReactiveCocoa.h>
-//#import "NSString+Extension.h"
-#import <Masonry.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "Masonry.h"
 
 @interface SGTPlaceHolderTextView : UITextView
 @property(nonatomic, copy) NSString *placeholder;
