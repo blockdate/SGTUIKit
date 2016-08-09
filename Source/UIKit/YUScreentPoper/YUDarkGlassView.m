@@ -33,7 +33,7 @@
 
     YUBottomPopSelctView * popView =    [YUBottomPopSelctView share];
     
-    popView.whenSelectViewTouchUpInside(popView.yTitles.count -1);
+    popView.whenSelectViewTouchUpInside((int)popView.yTitles.count - 1);
     
     
     [self.window  disMissPopSelectView];

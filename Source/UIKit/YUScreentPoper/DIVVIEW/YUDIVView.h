@@ -20,7 +20,7 @@
 
 @property(assign,nonatomic) float yFianlMaxBottomY;
 
--(void)setMargin:(float) margin ;
+//-(void)setMargin:(float) margin ;
 -(void)setViews:(NSArray *)views marginRight:(float) marginRight marginTop:(float) marginTop paddingLeft:(float) paddingLeft;
 
 

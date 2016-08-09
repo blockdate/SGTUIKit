@@ -41,7 +41,7 @@
     
     _yMainDivView = [[YUDIVView alloc]init];
     
-    [_yMainDivView setFrame:CGRectMake(PADDING_LEFT, PADDING_TOP,SCREEN_WIDTH - PADDING_LEFT * 2, 0)];
+    [_yMainDivView setFrame:CGRectMake(PADDING_LEFT, PADDING_TOP,ScreenWidth - PADDING_LEFT * 2, 0)];
     
     _yMainDivView.backgroundColor= [UIColor MainViewbackGroundColor];
     
@@ -66,15 +66,15 @@
     
     _yTitles = absoluteTitles;
     
-    int sum = absoluteTitles.count;
+    int sum = (int)absoluteTitles.count;
     
-    float buttonWidth = SCREEN_WIDTH - PADDING_LEFT * 2 ;
+    float buttonWidth = ScreenWidth - PADDING_LEFT * 2 ;
     
     float buttonHeigh = buttonHeigh;
     
     float finalHeigh = PADDING_TOP * 2 + (sum -1) * BtnMargin_top +sum * BtnHeigh;
     
-    [self setFrame:CGRectMake(0, 0, SCREEN_WIDTH, finalHeigh)];
+    [self setFrame:CGRectMake(0, 0, ScreenWidth, finalHeigh)];
     
     NSMutableArray * mutableArray  = [[NSMutableArray alloc]init];
     
@@ -118,7 +118,7 @@
     
     UIButton * thisBtn = (UIButton *)sender;
     
-    int thisRow = thisBtn.tag - Btn_BASE_TAG;
+    int thisRow = (int)thisBtn.tag - Btn_BASE_TAG;
     
     
     if([_deldge respondsToSelector:@selector(whenSelectViewTouchUpInside:) ]){

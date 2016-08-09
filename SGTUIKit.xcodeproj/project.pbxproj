@@ -46,7 +46,6 @@
 		E199A3101D598B490097B960 /* UIView+SGTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A28B1D598B490097B960 /* UIView+SGTExt.m */; };
 		E199A3111D598B490097B960 /* trade.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E199A28D1D598B490097B960 /* trade.bundle */; };
 		E199A3121D598B490097B960 /* WMPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E199A28E1D598B490097B960 /* WMPlayer.bundle */; };
-		E199A3131D598B490097B960 /* SGTFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A28F1D598B490097B960 /* SGTFoundation.h */; };
 		E199A3141D598B490097B960 /* SGTGlobalDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2901D598B490097B960 /* SGTGlobalDefine.h */; };
 		E199A3151D598B490097B960 /* SGTUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2911D598B490097B960 /* SGTUIKit.h */; };
 		E199A3161D598B490097B960 /* CPTextViewPlaceholder.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2941D598B490097B960 /* CPTextViewPlaceholder.h */; };
@@ -174,7 +173,6 @@
 		E199A28B1D598B490097B960 /* UIView+SGTExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SGTExt.m"; sourceTree = "<group>"; };
 		E199A28D1D598B490097B960 /* trade.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = trade.bundle; sourceTree = "<group>"; };
 		E199A28E1D598B490097B960 /* WMPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WMPlayer.bundle; sourceTree = "<group>"; };
-		E199A28F1D598B490097B960 /* SGTFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTFoundation.h; sourceTree = "<group>"; };
 		E199A2901D598B490097B960 /* SGTGlobalDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTGlobalDefine.h; sourceTree = "<group>"; };
 		E199A2911D598B490097B960 /* SGTUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTUIKit.h; sourceTree = "<group>"; };
 		E199A2941D598B490097B960 /* CPTextViewPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPTextViewPlaceholder.h; sourceTree = "<group>"; };
@@ -319,7 +317,6 @@
 			children = (
 				E199A2641D598B490097B960 /* Category */,
 				E199A28C1D598B490097B960 /* Res */,
-				E199A28F1D598B490097B960 /* SGTFoundation.h */,
 				E199A2901D598B490097B960 /* SGTGlobalDefine.h */,
 				E199A2911D598B490097B960 /* SGTUIKit.h */,
 				E199A2921D598B490097B960 /* UIKit */,
@@ -622,7 +619,6 @@
 				E199A3141D598B490097B960 /* SGTGlobalDefine.h in Headers */,
 				E199A2FF1D598B490097B960 /* UINavigationBar+SGTExt.h in Headers */,
 				E199A2FD1D598B490097B960 /* UIDevice+SGTExt.h in Headers */,
-				E199A3131D598B490097B960 /* SGTFoundation.h in Headers */,
 				E199A3281D598B490097B960 /* RTLabel.h in Headers */,
 				E199A3301D598B490097B960 /* SCLButton.h in Headers */,
 				E199A30D1D598B490097B960 /* UITableView+FDTemplateLayoutCellDebug.h in Headers */,
@@ -915,10 +911,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SGTUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wleo.SGTUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -932,10 +930,12 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SGTUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wleo.SGTUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

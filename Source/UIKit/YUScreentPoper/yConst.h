@@ -7,9 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#define IS_IOS_7 ([[[UIDevice currentDevice] systemVersion] doubleValue]>=7.0)?YES:NO
-#define ScreenHeight ((IS_IOS_7)?([UIScreen mainScreen].bounds.size.height):([UIScreen mainScreen].bounds.size.height - 20))
-#define SCREEN_WIDTH (int)[UIScreen mainScreen].bounds.size.width
+#import "SGTGlobalDefine.h"
 @interface yConst : NSObject
 
 @end
