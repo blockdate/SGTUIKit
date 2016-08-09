@@ -8,7 +8,7 @@
 
 #import "SGTPageSliderView.h"
 #import "SGTGlobalDefine.h"
-#import <Masonry.h>
+#import "Masonry.h"
 #import <UIImageView+WebCache.h>
 
 @interface SGTPageSliderView()<UIScrollViewDelegate>
