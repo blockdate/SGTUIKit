@@ -93,6 +93,7 @@
         NSString *url = self.imageUrlArray[i];
         UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(ScreenWidth*i, 0, ScreenWidth, self.scrollView.frame.size.height)];
         imageView.tag = i;
+        imageView.clipsToBounds = YES;
         imageView.contentMode = UIViewContentModeScaleAspectFill;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(taped:)];
         [imageView addGestureRecognizer:tap];
