@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E84CB42EC1ED5B5050F0C38 /* libPods-SGTUIKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0093E70D61762F30F65B2DB /* libPods-SGTUIKit.a */; };
+		2B34F8F583E9C03E0AE6C07F /* Pods_SGTUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C3118BA7EAB25A4D8B1DCB /* Pods_SGTUIKit.framework */; };
 		E199A2ED1D598B490097B960 /* NSArray+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2661D598B490097B960 /* NSArray+SGTExt.h */; };
 		E199A2EE1D598B490097B960 /* NSArray+SGTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2671D598B490097B960 /* NSArray+SGTExt.m */; };
 		E199A2EF1D598B490097B960 /* NSData+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2681D598B490097B960 /* NSData+SGTExt.h */; };
@@ -130,7 +130,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A0093E70D61762F30F65B2DB /* libPods-SGTUIKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SGTUIKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C3118BA7EAB25A4D8B1DCB /* Pods_SGTUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96CBDF489FB88469E140951 /* Pods-SGTUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGTUIKit/Pods-SGTUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		D5D75B8026E53CF8E34E83C7 /* Pods-SGTUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGTUIKit/Pods-SGTUIKit.debug.xcconfig"; sourceTree = "<group>"; };
 		E199A2581D598A140097B960 /* SGTUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGTUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,7 +261,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E84CB42EC1ED5B5050F0C38 /* libPods-SGTUIKit.a in Frameworks */,
+				2B34F8F583E9C03E0AE6C07F /* Pods_SGTUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +271,7 @@
 		1F14B5930B34D1543150BAC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0093E70D61762F30F65B2DB /* libPods-SGTUIKit.a */,
+				92C3118BA7EAB25A4D8B1DCB /* Pods_SGTUIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -849,7 +849,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -891,7 +891,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

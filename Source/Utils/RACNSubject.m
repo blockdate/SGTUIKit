@@ -8,10 +8,10 @@
 
 
 #import "RACNSubject.h"
-#import "RACEXTScope.h"
-#import "RACSubscriber.h"
-#import "RACCompoundDisposable.h"
-#import "RACPassthroughSubscriber.h"
+#import <ReactiveCocoa/EXTScope.h>
+//#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveCocoa/RACPassthroughSubscriber.h>
+#import <ReactiveCocoa/RACCompoundDisposable.h>
 
 @interface RACNSubject ()
 
