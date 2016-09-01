@@ -5,7 +5,7 @@ use_frameworks!
 
 workspace 'SGTUIKit'
 project 'SGTUIKit.xcodeproj'
-# project 'Demo/Demo.xcodeproj'
+project 'Demo/Demo.xcodeproj'
 
 target 'SGTUIKit' do
     project 'SGTUIKit.xcodeproj'
@@ -15,6 +15,12 @@ target 'SGTUIKit' do
     pod 'SDWebImage'
 end
 
+target 'Demo' do
+    project 'Demo/Demo'
+    platform :ios, '8.0'
+#    pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+    pod 'SGTUIKit', :path => '../SGTUIKit'
+end
 #  target 'Demo' do
 #      project 'Demo/Demo.xcodeproj'
 #      platform :ios, '8.0'

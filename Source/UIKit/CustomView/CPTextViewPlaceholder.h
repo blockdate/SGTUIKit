@@ -28,6 +28,8 @@
 @property (nonatomic, assign) UIKeyboardType keyboardType;
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, strong) UIColor *tintColor;
+@property (nonatomic, assign) NSInteger inputLines;
+
 - (RACSignal *) rac_textSignal;
 
 

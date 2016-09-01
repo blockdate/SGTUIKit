@@ -6,18 +6,28 @@ PODS:
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
+  - SGTUIKit (1.0.5):
+    - Masonry
+    - ReactiveCocoa
+    - SDWebImage
 
 DEPENDENCIES:
   - Masonry
   - ReactiveCocoa
   - SDWebImage
+  - SGTUIKit (from `../SGTUIKit`)
+
+EXTERNAL SOURCES:
+  SGTUIKit:
+    :path: ../SGTUIKit
 
 SPEC CHECKSUMS:
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   ReactiveCocoa: 5a42745f11ea236f405bb9ce5e97c5e3b23562dd
   Result: 18e1a7597fbcca5923c565b40a25a98afafdee02
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+  SGTUIKit: ca1d5c83357bf6df5636ea5e6bb0dbb71239774c
 
-PODFILE CHECKSUM: 93ae5ddc85958c1d553a0657cc1cc1a55eb0d2e6
+PODFILE CHECKSUM: ad5f1de3e5820bb81b2549805f4d898c5cc1ba67
 
 COCOAPODS: 1.0.1
