@@ -10,7 +10,7 @@ project 'Demo/Demo.xcodeproj'
 target 'SGTUIKit' do
     project 'SGTUIKit.xcodeproj'
     platform :ios, '8.0'
-    pod 'ReactiveCocoa'
+    pod 'ReactiveCocoa', '~> 2.5'
     pod 'Masonry'
     pod 'SDWebImage'
 end
