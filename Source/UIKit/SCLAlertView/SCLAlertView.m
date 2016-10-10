@@ -12,7 +12,7 @@
 #import "UIImage+ImageEffects.h"
 #import "SCLTimerDisplay.h"
 #import "SCLMacros.h"
-#import <ReactiveCocoa/UIButton+RACCommandSupport.h>
+#import <ReactiveObjC/UIButton+RACCommandSupport.h>
 #import "SGTGlobalDefine.h"
 
 #if defined(__has_feature) && __has_feature(modules)

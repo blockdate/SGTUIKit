@@ -1,36 +1,30 @@
 PODS:
   - Masonry (1.0.2)
-  - ReactiveCocoa (2.5):
-    - ReactiveCocoa/UI (= 2.5)
-  - ReactiveCocoa/Core (2.5):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.5)
-  - ReactiveCocoa/UI (2.5):
-    - ReactiveCocoa/Core
+  - ReactiveObjC (1.0.1)
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - SGTUIKit (1.0.5):
     - Masonry
-    - ReactiveCocoa
+    - ReactiveObjC
     - SDWebImage
 
 DEPENDENCIES:
   - Masonry
-  - ReactiveCocoa (~> 2.5)
+  - ReactiveObjC
   - SDWebImage
   - SGTUIKit (from `../SGTUIKit`)
 
 EXTERNAL SOURCES:
   SGTUIKit:
-    :path: ../SGTUIKit
+    :path: "../SGTUIKit"
 
 SPEC CHECKSUMS:
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
-  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveObjC: 0e618037d7b883b4cebcc8da203e8ed9b69ca2d3
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
-  SGTUIKit: ca1d5c83357bf6df5636ea5e6bb0dbb71239774c
+  SGTUIKit: f5d0eac7bd1d3d35de31bb8e35c4e267bb677907
 
-PODFILE CHECKSUM: 0b1e8a6612663971bdf022142f16dfe418916d83
+PODFILE CHECKSUM: 78ac57b6f54ef406ae6fcac8868f09bdf3587005
 
 COCOAPODS: 1.0.1

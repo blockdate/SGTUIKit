@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B34F8F583E9C03E0AE6C07F /* Pods_SGTUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C3118BA7EAB25A4D8B1DCB /* Pods_SGTUIKit.framework */; };
+		6082BD2A1DAB8B7500145755 /* SGTUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6082BD291DAB8B7500145755 /* SGTUIKit.podspec */; };
 		E199A2ED1D598B490097B960 /* NSArray+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2661D598B490097B960 /* NSArray+SGTExt.h */; };
 		E199A2EE1D598B490097B960 /* NSArray+SGTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2671D598B490097B960 /* NSArray+SGTExt.m */; };
 		E199A2EF1D598B490097B960 /* NSData+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2681D598B490097B960 /* NSData+SGTExt.h */; };
@@ -130,6 +131,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6082BD291DAB8B7500145755 /* SGTUIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SGTUIKit.podspec; sourceTree = "<group>"; };
 		92C3118BA7EAB25A4D8B1DCB /* Pods_SGTUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96CBDF489FB88469E140951 /* Pods-SGTUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGTUIKit/Pods-SGTUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		D5D75B8026E53CF8E34E83C7 /* Pods-SGTUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGTUIKit/Pods-SGTUIKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -288,6 +290,7 @@
 		E199A24E1D598A140097B960 = {
 			isa = PBXGroup;
 			children = (
+				6082BD291DAB8B7500145755 /* SGTUIKit.podspec */,
 				E199A2631D598B490097B960 /* Source */,
 				E199A25A1D598A140097B960 /* SGTUIKit */,
 				E199A2591D598A140097B960 /* Products */,
@@ -703,6 +706,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6082BD2A1DAB8B7500145755 /* SGTUIKit.podspec in Resources */,
 				E199A3121D598B490097B960 /* WMPlayer.bundle in Resources */,
 				E199A3111D598B490097B960 /* trade.bundle in Resources */,
 				E199A34C1D598B490097B960 /* FontAwesome.ttf in Resources */,

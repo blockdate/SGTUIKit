@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "CPTextViewPlaceholder.h"
 @interface ViewController ()
 
 @end
@@ -18,12 +17,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor lightGrayColor];
-    CPTextViewPlaceholder *pb = [[CPTextViewPlaceholder alloc] initWithFrame:CGRectMake(0, 90, 320, 44)];
-    pb.showSecret = false;
-//    pb.inputLines = 5;
-    pb.placeholder = @"asdasd";
-    pb.backgroundColor = [UIColor redColor];
-    [self.view addSubview:pb];
 }
 
 - (void)didReceiveMemoryWarning {

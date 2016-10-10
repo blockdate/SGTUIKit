@@ -19,7 +19,7 @@ typedef enum {
 #import "SGTTradeInputView.h"
 #import "SGTTradeKeyboard.h"
 #import "NSString+Extension.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 @interface SGTTradeInputView ()
 /** 数字数组 */
 @property (nonatomic, strong) NSMutableArray *nums;

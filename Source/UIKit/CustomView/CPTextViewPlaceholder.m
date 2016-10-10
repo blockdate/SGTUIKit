@@ -7,7 +7,7 @@
 //
 
 #import "CPTextViewPlaceholder.h"
-#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <ReactiveObjC/ReactiveObjC.h>
 #import "Masonry.h"
 
 @interface SGTPlaceHolderTextView : UITextView
