@@ -15,6 +15,7 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import "NSData+SGTExt.h"
 #import "NSNumber+SGTExt.h"
+#import "NSDate+SGTExt.h"
 
 @implementation NSString (Founction)
 
@@ -586,6 +587,57 @@ const Byte iv[] = {1,2,3,4,5,6,7,8};
         plaintext = [[NSString alloc]initWithData:plaindata encoding:NSUTF8StringEncoding];
     }
     return plaintext;
+}
+
+#pragma mark - Date
+
+/*
+ *  时间戳对应的NSDate
+ */
+-(NSDate *)date{
+    
+    NSTimeInterval timeInterval=self.floatValue;
+    
+    return [NSDate dateWithTimeIntervalSince1970:timeInterval];
+}
+
+
+
+- (NSString *)created_at {
+    // 获得服务器返回的时间
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    NSDate *createdAtDate = [fmt dateFromString:self];
+    // 获得当前时间
+    NSDate *nowDate = [NSDate date];
+    // 获取日历对象
+    NSCalendar *calender = [NSCalendar currentCalendar];
+    if (createdAtDate.isThisYear) { // 如果是今年
+        
+        if (createdAtDate.isToday) { // 如果是今天
+            
+            NSCalendarUnit unit = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+            NSDateComponents *comps = [calender components:unit fromDate:createdAtDate toDate:nowDate options:0];
+            if (comps.hour >= 1) { // 如果时间间隔 >= 1小时
+                return [NSString stringWithFormat:@"%zd小时前",comps.hour];
+            } else if (comps.minute >= 1) { //  1小时 >如果时间间隔 >= 1分钟
+                return [NSString stringWithFormat:@"%zd分钟前",comps.minute];
+            } else { // 时间间隔 < 一分钟
+                return @"刚刚";
+            }
+            
+        }else if (createdAtDate.isYesToday) { // 如果是昨天
+            fmt.dateFormat = @"HH:mm:ss";
+            return [NSString stringWithFormat:@"昨天 %@",[fmt stringFromDate:createdAtDate]];
+        } else { // 不是今年
+            fmt.dateFormat = @"MM-dd HH:mm:ss";
+            return [fmt stringFromDate:createdAtDate];
+        }
+        
+    }else {
+        
+        return self;
+    }
 }
 
 @end

@@ -466,5 +466,13 @@ NS_ASSUME_NONNULL_BEGIN
 //解密
 //+ (nullable NSData *)DESDecrypt:(nullable NSData *)data WithKey:(nullable NSString *)key;
 
+#pragma mark - Date
+
+@property (nonatomic,strong,readonly) NSDate *date;
+
+
+
+- (NSString *)created_at;
+
 @end
 NS_ASSUME_NONNULL_END

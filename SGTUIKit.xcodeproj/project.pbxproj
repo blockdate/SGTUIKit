@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2B34F8F583E9C03E0AE6C07F /* Pods_SGTUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C3118BA7EAB25A4D8B1DCB /* Pods_SGTUIKit.framework */; };
+		600DD4971DB8549C00E0E581 /* UIImage+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 600DD4951DB8549C00E0E581 /* UIImage+SGTExt.h */; };
+		600DD4981DB8549C00E0E581 /* UIImage+SGTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 600DD4961DB8549C00E0E581 /* UIImage+SGTExt.m */; };
 		6082BD2A1DAB8B7500145755 /* SGTUIKit.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6082BD291DAB8B7500145755 /* SGTUIKit.podspec */; };
+		60ED99E81DC080B70015FF19 /* NSDate+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ED99E61DC080B70015FF19 /* NSDate+SGTExt.h */; };
+		60ED99E91DC080B70015FF19 /* NSDate+SGTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ED99E71DC080B70015FF19 /* NSDate+SGTExt.m */; };
 		E199A2ED1D598B490097B960 /* NSArray+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2661D598B490097B960 /* NSArray+SGTExt.h */; };
 		E199A2EE1D598B490097B960 /* NSArray+SGTExt.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2671D598B490097B960 /* NSArray+SGTExt.m */; };
 		E199A2EF1D598B490097B960 /* NSData+SGTExt.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2681D598B490097B960 /* NSData+SGTExt.h */; };
@@ -131,7 +135,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		600DD4951DB8549C00E0E581 /* UIImage+SGTExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SGTExt.h"; sourceTree = "<group>"; };
+		600DD4961DB8549C00E0E581 /* UIImage+SGTExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SGTExt.m"; sourceTree = "<group>"; };
 		6082BD291DAB8B7500145755 /* SGTUIKit.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SGTUIKit.podspec; sourceTree = "<group>"; };
+		60ED99E61DC080B70015FF19 /* NSDate+SGTExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SGTExt.h"; sourceTree = "<group>"; };
+		60ED99E71DC080B70015FF19 /* NSDate+SGTExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SGTExt.m"; sourceTree = "<group>"; };
 		92C3118BA7EAB25A4D8B1DCB /* Pods_SGTUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96CBDF489FB88469E140951 /* Pods-SGTUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGTUIKit/Pods-SGTUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		D5D75B8026E53CF8E34E83C7 /* Pods-SGTUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGTUIKit/Pods-SGTUIKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -354,6 +362,8 @@
 				E199A2711D598B490097B960 /* NSObject+SGTExt.m */,
 				E199A2721D598B490097B960 /* NSString+SGTExt.h */,
 				E199A2731D598B490097B960 /* NSString+SGTExt.m */,
+				60ED99E61DC080B70015FF19 /* NSDate+SGTExt.h */,
+				60ED99E71DC080B70015FF19 /* NSDate+SGTExt.m */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -376,6 +386,8 @@
 				E199A2811D598B490097B960 /* UITableViewCell+FD */,
 				E199A28A1D598B490097B960 /* UIView+SGTExt.h */,
 				E199A28B1D598B490097B960 /* UIView+SGTExt.m */,
+				600DD4951DB8549C00E0E581 /* UIImage+SGTExt.h */,
+				600DD4961DB8549C00E0E581 /* UIImage+SGTExt.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -584,6 +596,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60ED99E81DC080B70015FF19 /* NSDate+SGTExt.h in Headers */,
 				E199A3071D598B490097B960 /* UITableView+FDIndexPathHeightCache.h in Headers */,
 				E199A3551D598B490097B960 /* UIView+YUStyle.h in Headers */,
 				E199A33F1D598B490097B960 /* SGTTradeInputView.h in Headers */,
@@ -639,6 +652,7 @@
 				E199A3481D598B490097B960 /* UIView+Extension.h in Headers */,
 				E199A2ED1D598B490097B960 /* NSArray+SGTExt.h in Headers */,
 				E199A3151D598B490097B960 /* SGTUIKit.h in Headers */,
+				600DD4971DB8549C00E0E581 /* UIImage+SGTExt.h in Headers */,
 				E199A3461D598B490097B960 /* UIAlertView+Quick.h in Headers */,
 				E199A3531D598B490097B960 /* UIColor+YUColor.h in Headers */,
 				E199A30F1D598B490097B960 /* UIView+SGTExt.h in Headers */,
@@ -788,6 +802,7 @@
 				E199A3521D598B490097B960 /* YUDIVView.m in Sources */,
 				E199A3251D598B490097B960 /* MGSwipeButton.m in Sources */,
 				E199A30E1D598B490097B960 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				60ED99E91DC080B70015FF19 /* NSDate+SGTExt.m in Sources */,
 				E199A3491D598B490097B960 /* UIView+Extension.m in Sources */,
 				E199A30A1D598B490097B960 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				E199A3361D598B490097B960 /* SCLTextView.m in Sources */,
@@ -804,6 +819,7 @@
 				E199A2F01D598B490097B960 /* NSData+SGTExt.m in Sources */,
 				E199A3171D598B490097B960 /* CPTextViewPlaceholder.m in Sources */,
 				E199A35E1D598B490097B960 /* YUBottomPopSelctView.m in Sources */,
+				600DD4981DB8549C00E0E581 /* UIImage+SGTExt.m in Sources */,
 				E199A33A1D598B490097B960 /* UIImage+ImageEffects.m in Sources */,
 				E199A32B1D598B490097B960 /* SCLAlertView.m in Sources */,
 				E199A2FE1D598B490097B960 /* UIDevice+SGTExt.m in Sources */,
