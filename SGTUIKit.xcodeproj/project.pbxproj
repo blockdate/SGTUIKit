@@ -695,6 +695,7 @@
 				TargetAttributes = {
 					E199A2571D598A140097B960 = {
 						CreatedOnToolsVersion = 7.3.1;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -926,6 +927,7 @@
 			baseConfigurationReference = D5D75B8026E53CF8E34E83C7 /* Pods-SGTUIKit.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -945,6 +947,7 @@
 			baseConfigurationReference = A96CBDF489FB88469E140951 /* Pods-SGTUIKit.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

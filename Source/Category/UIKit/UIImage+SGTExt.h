@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImage+SGTExt.h"
 
 @interface UIImage (SGTExt)
 
