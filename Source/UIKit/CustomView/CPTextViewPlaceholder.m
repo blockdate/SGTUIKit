@@ -94,6 +94,20 @@
         @strongify(self)
         self.text = text;
     }];
+    //    RACSignal *signal = [[[[RACSignal
+    //         defer:^{
+    //             @strongify(self);
+    //             return [RACSignal return:self.inner_textField];
+    //         }]
+    //        concat:[self.inner_textField rac_signalForControlEvents:UIControlEventEditingChanged]]
+    //       map:^(UITextField *x) {
+    //           return x.text;
+    //       }]
+    //     takeUntil:self.rac_willDeallocSignal];
+    //    [signal subscribeNext:^(NSString *text) {
+    //        @strongify(self);
+    ////        self.text = text;
+    //    }];
 }
 
 - (void)layoutSubviews {
@@ -154,8 +168,10 @@
 
 -(void)setText:(NSString *)text{
     _text = text;
-    [[self currentInputView] setValue:text forKey:@"text"];
+}
 
+- (void)setTextViewText:(NSString *)text {
+    [[self currentInputView] setValue:text forKey:@"text"];
 }
 
 - (UIView *)inputView {
@@ -240,7 +256,7 @@
 
 - (void)setTextColor:(UIColor *)textColor {
     [[self currentInputView] setValue:textColor forKeyPath:@"textColor"];
-
+    
 }
 
 - (UIColor *)textColor {
@@ -253,7 +269,7 @@
 
 - (void)setTintColor:(UIColor *)tintColor {
     [[self currentInputView] setValue:tintColor forKeyPath:@"tintColor"];
-
+    
 }
 
 - (UIColor *)tintColor {

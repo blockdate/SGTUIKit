@@ -32,5 +32,6 @@
 
 - (RACSignal *) rac_textSignal;
 
+- (void)setTextViewText:(NSString *)text;
 
 @end
