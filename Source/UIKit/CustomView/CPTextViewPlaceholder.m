@@ -171,6 +171,7 @@
 }
 
 - (void)setTextViewText:(NSString *)text {
+    _text = text;
     [[self currentInputView] setValue:text forKey:@"text"];
 }
 
