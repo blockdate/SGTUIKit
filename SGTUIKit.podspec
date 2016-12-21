@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "SGTUIKit"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "This is a private pod sp. provide SGTUIKit function."
   s.description  = <<-DESC
   This is a private Podspec. Provide SGTUIKit function. Base on ReactiveCocoa

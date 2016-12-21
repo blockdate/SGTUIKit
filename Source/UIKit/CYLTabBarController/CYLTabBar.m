@@ -124,10 +124,18 @@
 {
     if (!self.clipsToBounds && !self.hidden && self.alpha > 0) {
         for (UIView *subview in self.subviews.reverseObjectEnumerator) {
-            CGPoint subPoint = [subview convertPoint:point fromView:self];
+            CGPoint subPoint = [self convertPoint:point toView:subview];
+            if (subPoint.x <0 || subPoint.y < 0) {
+                continue;
+            }
             UIView *result = [subview hitTest:subPoint withEvent:event];
+            
             if (result != nil) {
                 return result;
+            }
+            //some time the hit test was not function well, use this to fix it
+            if (subview.bounds.size.width>=subPoint.x && subview.bounds.size.height >= subPoint.y) {
+                return subview;
             }
         }
     }
