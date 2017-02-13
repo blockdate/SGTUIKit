@@ -67,10 +67,6 @@
 		E199A3211D598B490097B960 /* CYLTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2A01D598B490097B960 /* CYLTabBar.m */; };
 		E199A3221D598B490097B960 /* CYLTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2A11D598B490097B960 /* CYLTabBarController.h */; };
 		E199A3231D598B490097B960 /* CYLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2A21D598B490097B960 /* CYLTabBarController.m */; };
-		E199A3241D598B490097B960 /* MGSwipeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2A41D598B490097B960 /* MGSwipeButton.h */; };
-		E199A3251D598B490097B960 /* MGSwipeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2A51D598B490097B960 /* MGSwipeButton.m */; };
-		E199A3261D598B490097B960 /* MGSwipeTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2A61D598B490097B960 /* MGSwipeTableCell.h */; };
-		E199A3271D598B490097B960 /* MGSwipeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2A71D598B490097B960 /* MGSwipeTableCell.m */; };
 		E199A3281D598B490097B960 /* RTLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2A91D598B490097B960 /* RTLabel.h */; };
 		E199A3291D598B490097B960 /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E199A2AA1D598B490097B960 /* RTLabel.m */; };
 		E199A32A1D598B490097B960 /* SCLAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = E199A2AC1D598B490097B960 /* SCLAlertView.h */; };
@@ -199,10 +195,6 @@
 		E199A2A01D598B490097B960 /* CYLTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBar.m; sourceTree = "<group>"; };
 		E199A2A11D598B490097B960 /* CYLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYLTabBarController.h; sourceTree = "<group>"; };
 		E199A2A21D598B490097B960 /* CYLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYLTabBarController.m; sourceTree = "<group>"; };
-		E199A2A41D598B490097B960 /* MGSwipeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeButton.h; sourceTree = "<group>"; };
-		E199A2A51D598B490097B960 /* MGSwipeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeButton.m; sourceTree = "<group>"; };
-		E199A2A61D598B490097B960 /* MGSwipeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MGSwipeTableCell.h; sourceTree = "<group>"; };
-		E199A2A71D598B490097B960 /* MGSwipeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MGSwipeTableCell.m; sourceTree = "<group>"; };
 		E199A2A91D598B490097B960 /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
 		E199A2AA1D598B490097B960 /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
 		E199A2AC1D598B490097B960 /* SCLAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCLAlertView.h; sourceTree = "<group>"; };
@@ -421,7 +413,6 @@
 			children = (
 				E199A2931D598B490097B960 /* CustomView */,
 				E199A29C1D598B490097B960 /* CYLTabBarController */,
-				E199A2A31D598B490097B960 /* MGSwipeTableCell */,
 				E199A2A81D598B490097B960 /* RTLabel */,
 				E199A2AB1D598B490097B960 /* SCLAlertView */,
 				E199A2BD1D598B490097B960 /* SGTTradeView */,
@@ -457,17 +448,6 @@
 				E199A2A21D598B490097B960 /* CYLTabBarController.m */,
 			);
 			path = CYLTabBarController;
-			sourceTree = "<group>";
-		};
-		E199A2A31D598B490097B960 /* MGSwipeTableCell */ = {
-			isa = PBXGroup;
-			children = (
-				E199A2A41D598B490097B960 /* MGSwipeButton.h */,
-				E199A2A51D598B490097B960 /* MGSwipeButton.m */,
-				E199A2A61D598B490097B960 /* MGSwipeTableCell.h */,
-				E199A2A71D598B490097B960 /* MGSwipeTableCell.m */,
-			);
-			path = MGSwipeTableCell;
 			sourceTree = "<group>";
 		};
 		E199A2A81D598B490097B960 /* RTLabel */ = {
@@ -609,7 +589,6 @@
 				E199A2FB1D598B490097B960 /* UIApplication+SGTExt.h in Headers */,
 				E199A31C1D598B490097B960 /* SGTSegmentSliderView.h in Headers */,
 				E199A3451D598B490097B960 /* Singleton.h in Headers */,
-				E199A3241D598B490097B960 /* MGSwipeButton.h in Headers */,
 				E199A3181D598B490097B960 /* CustomIOSAlertView.h in Headers */,
 				E199A33D1D598B490097B960 /* SGTAudioTool.h in Headers */,
 				E199A2F51D598B490097B960 /* NSNumber+SGTExt.h in Headers */,
@@ -646,7 +625,6 @@
 				E199A32A1D598B490097B960 /* SCLAlertView.h in Headers */,
 				E199A3351D598B490097B960 /* SCLTextView.h in Headers */,
 				E199A35B1D598B490097B960 /* YUBottomPopSelctModel.h in Headers */,
-				E199A3261D598B490097B960 /* MGSwipeTableCell.h in Headers */,
 				E199A3611D598B490097B960 /* RACNSubject.h in Headers */,
 				E199A3631D598B490097B960 /* RSA.h in Headers */,
 				E199A3481D598B490097B960 /* UIView+Extension.h in Headers */,
@@ -758,7 +736,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -780,7 +758,6 @@
 				E199A3061D598B490097B960 /* UISearchBar+SGTExt.m in Sources */,
 				E199A33E1D598B490097B960 /* SGTAudioTool.m in Sources */,
 				E199A2F61D598B490097B960 /* NSNumber+SGTExt.m in Sources */,
-				E199A3271D598B490097B960 /* MGSwipeTableCell.m in Sources */,
 				E199A3021D598B490097B960 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				E199A3641D598B490097B960 /* RSA.m in Sources */,
 				E199A3101D598B490097B960 /* UIView+SGTExt.m in Sources */,
@@ -801,7 +778,6 @@
 				E199A32D1D598B490097B960 /* SCLAlertViewResponder.m in Sources */,
 				E199A3041D598B490097B960 /* UIScrollView+SGTExt.m in Sources */,
 				E199A3521D598B490097B960 /* YUDIVView.m in Sources */,
-				E199A3251D598B490097B960 /* MGSwipeButton.m in Sources */,
 				E199A30E1D598B490097B960 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				60ED99E91DC080B70015FF19 /* NSDate+SGTExt.m in Sources */,
 				E199A3491D598B490097B960 /* UIView+Extension.m in Sources */,

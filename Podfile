@@ -13,6 +13,7 @@ target 'SGTUIKit' do
     pod 'ReactiveObjC'
     pod 'Masonry'
     pod 'SDWebImage'
+    pod 'MGSwipeTableCell'
 end
 
 target 'Demo' do
