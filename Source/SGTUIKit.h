@@ -38,8 +38,6 @@ FOUNDATION_EXPORT const unsigned char SGTUIKitVersionString[];
 #import "SGTSegmentSliderView.h"
 
 #import "CYLTabBarController.h"
-#import "MGSwipeTableCell.h"
-#import "MGSwipeButton.h"
 
 #import "SGTTradeView.h"
 #import "WMPlayer.h"
